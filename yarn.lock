@@ -8277,6 +8277,11 @@ react-helmet@^5.2.1:
     react-fast-compare "^2.0.2"
     react-side-effect "^1.1.0"
 
+react-hyperscript-helpers@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-hyperscript-helpers/-/react-hyperscript-helpers-2.0.0.tgz#8fc891d3f50bc8b7b477ca955ef55bbaad2560c9"
+  integrity sha512-nkWZ7GBDGD4qWnIJo+/gF+tjW9lY6rKMOie/OP03rWYyGNrb1SreiPgcaBsZ2VPQkZ1uUgruKXpRql+LjbsogA==
+
 react-is@^16.8.1, react-is@^16.8.4:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
