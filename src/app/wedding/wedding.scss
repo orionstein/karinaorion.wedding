@@ -1,0 +1,14 @@
+@import "bulma/sass/utilities/_all.sass";
+
+.gmap_wedding {
+  background: url('../images/weddingLocationLarge.png') no-repeat;
+  background-size: contain;
+  width: 640px;
+  height: 450px;
+  display: block;
+  @include mobile {
+    background: url('../images/weddingLocationSmall.png') no-repeat;
+    width: 300px;
+    height: 250px;
+  }
+}

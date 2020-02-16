@@ -1,20 +1,20 @@
 import Helmet from 'react-helmet'
-import { div, header, p, title } from  'react-hyperscript-helpers';
-import { hyper } from './lib/hyper'
-import logo from './logo.svg';
-import './App.css';
+import { div, header, p, title } from 'react-hyperscript-helpers'
+import { hyper } from 'lib/hyper'
+import Meta from 'app/meta/Meta'
+import { Link } from 'react-router-dom'
+import './App.scss'
 
-const hHelmet = hyper(Helmet)
+const hLink = hyper(Link)
 
 function App() {
-  return (
-    div('.App', [
-      hHelmet({title: 'Karina and Orion Wedding!!!'}),
-      header('.App-header', [
-        p('Karina and Orion WEDDING AAAH')
-      ])
-    ])
-  )
+  return div('.App', [
+    Meta(),
+    header('.App-header', [p('Karina and Orion <3')]),
+    hLink({
+      to: '/foo',
+    }, ['foo']),
+  ])
 }
 
-export default hyper(App);
+export default hyper(App)

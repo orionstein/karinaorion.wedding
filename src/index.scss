@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/raleway/raleway.eot'); /* IE9 Compat Modes */
+  src: url('fonts/raleway/raleway.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/raleway/raleway.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/raleway/raleway.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/raleway/raleway.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'LindenHill';
+  src: url('fonts/lindenhill/lindenhill.eot'); /* IE9 Compat Modes */
+  src: url('fonts/lindenhill/lindenhill.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/lindenhill/lindenhill.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/lindenhill/lindenhill.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/lindenhill/lindenhill.svg#LindenHill') format('svg'); /* Legacy iOS */
+}
+
+body {
+  margin: 0;
+  font-family: 'LindenHill', "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 22px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

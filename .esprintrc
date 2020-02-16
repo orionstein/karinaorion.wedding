@@ -1,0 +1,11 @@
+{
+  "paths": [
+    "src/**/*.js",
+    "test/**/*.js",
+    "tests/**/*.js"
+  ],
+  "ignored": [
+    "**/node_modules/**/*"
+  ],
+  "port": 5004
+}

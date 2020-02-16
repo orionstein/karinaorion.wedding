@@ -278,6 +278,8 @@ module.exports = function(webpackEnv) {
         // Not necessary unless you consume a module requiring `react-dom-factories`
         'react-dom-factories': 'preact-compat/lib/react-dom-factories',
         'react-native': 'react-native-web',
+        'lib': path.resolve(__dirname, '../src/lib/'),
+        'app': path.resolve(__dirname, '../src/app/'),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
@@ -358,6 +360,7 @@ module.exports = function(webpackEnv) {
                         },
                       },
                     },
+                    require.resolve('@babel/plugin-proposal-throw-expressions'),
                   ],
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).

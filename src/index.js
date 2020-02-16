@@ -1,11 +1,32 @@
-import { render } from 'react-snapshot';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { render } from 'react-snapshot'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { hyper } from 'lib/hyper'
+import Meta from 'app/meta/Meta'
 
-render(App(), document.getElementById('root'));
+import Layout from './app/core/layout'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.register();
+import './index.scss'
+import App from './App'
+import Home from './app/home/home'
+import Wedding from './app/wedding/wedding'
+import * as serviceWorker from './serviceWorker'
+
+const hRouter = hyper(Router)
+
+render(
+  hRouter([
+    Meta(),
+    Layout({
+      path: '/',
+      exact: true,
+      component: Home,
+    }),
+    Layout({
+      path: '/wedding',
+      component: Wedding,
+    }),
+  ]),
+  document.getElementById('root'),
+)
+
+serviceWorker.register()

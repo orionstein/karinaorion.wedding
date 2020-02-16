@@ -1,0 +1,14 @@
+# Install EditorConfig plugin to adopt these settings https://EditorConfig.org
+
+# Signifies this is the top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[*.{js,scss,ts,tsx}]
+charset = utf-8
+indent_style = space
+indent_size = 2
